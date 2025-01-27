@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<title>
+			wz4-Calculadora
+		</title>
+		<script id="clientEventHandlersJS" language="javascript">
+		<!--
+
+window.moveTo((window.screen.availWidth-204)/2, (window.screen.availHeight-159)/2);
+window.resizeTo("204", "159");
+
+function B1_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 1;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 1;
+	}
+}
+
+function B2_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 2;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 2;
+	}
+}
+
+function B3_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 3;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 3;
+	}
+}
+
+function B4_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 4;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 4;
+	}
+}
+
+function B5_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 5;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 5;
+	}
+}
+
+function B6_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 6;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 6;
+	}
+}
+
+function B7_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 7;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 7;
+	}
+}
+
+function B8_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 8;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 8;
+	}
+}
+
+function B9_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 9;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 9;
+	}
+}
+
+function B0_onclick() {
+	if (cuerpo.TopA.value == "") {
+		cuerpo.TopA.value = 0;
+	} else if (cuerpo.TopB.value == "") {
+		cuerpo.TopB.value = 0;
+	}
+}
+
+function Bmas_onclick(a) {
+	cuerpo.Tresultado.value = Number(cuerpo.TopA.value) + Number(cuerpo.TopB.value);
+}
+
+function Bmenos_onclick() {
+	cuerpo.Tresultado.value = Number(cuerpo.TopA.value) - Number(cuerpo.TopB.value);
+}
+
+function Bpor_onclick() {
+	cuerpo.Tresultado.value = Number(cuerpo.TopA.value) * Number(cuerpo.TopB.value);
+}
+
+function Bentre_onclick() {
+	cuerpo.Tresultado.value = Number(cuerpo.TopA.value) / Number(cuerpo.TopB.value);
+}
+
+function Bc_onclick() {
+	cuerpo.TopA.value = "";
+	cuerpo.TopB.value = "";
+	cuerpo.Tresultado.value = "";
+}
+
+		//-->
+		</script>
+	</head>
+	<body MS_POSITIONING="GridLayout" bgColor="buttonface">
+		<form name="cuerpo" ID="cuerpo">
+			<INPUT id="Bc" style="Z-INDEX: 109; LEFT: 104px; WIDTH: 72px; POSITION: absolute; TOP: 0px; HEIGHT: 24px" type="button" value="C" name="Bc" language=javascript onclick="return Bc_onclick()">
+			<INPUT id="Bentre" style="Z-INDEX: 114; LEFT: 144px; WIDTH: 32px; POSITION: absolute; TOP: 104px; HEIGHT: 24px" type="button" value="/" name="Bentre" language="javascript" onclick="return Bentre_onclick()">
+			<INPUT id="Bpor" style="Z-INDEX: 113; LEFT: 144px; WIDTH: 32px; POSITION: absolute; TOP: 80px; HEIGHT: 24px" type="button" value="x" name="Bpor" language="javascript" onclick="return Bpor_onclick()">
+			<INPUT id="Bmenos" style="Z-INDEX: 112; LEFT: 144px; WIDTH: 32px; POSITION: absolute; TOP: 56px; HEIGHT: 24px" type="button" value="-" name="Bmenos" language="javascript" onclick="return Bmenos_onclick()">
+			<INPUT id="Bmas" style="Z-INDEX: 111; LEFT: 144px; WIDTH: 32px; POSITION: absolute; TOP: 32px; HEIGHT: 24px" type="button" value="+" name="Bmas" language="javascript" onclick="return Bmas_onclick()">
+			<INPUT id="B0" style="Z-INDEX: 110; LEFT: 72px; WIDTH: 32px; POSITION: absolute; TOP: 104px; HEIGHT: 24px" type="button" value="0" name="B0" language="javascript" onclick="return B0_onclick()">
+			<INPUT id="B9" style="Z-INDEX: 108; LEFT: 104px; WIDTH: 32px; POSITION: absolute; TOP: 80px; HEIGHT: 24px" type="button" value="9" name="B9" language="javascript" onclick="return B9_onclick()">
+			<INPUT id="B8" style="Z-INDEX: 107; LEFT: 72px; WIDTH: 32px; POSITION: absolute; TOP: 80px; HEIGHT: 24px" type="button" value="8" name="B8" language="javascript" onclick="return B8_onclick()">
+			<INPUT id="B7" style="Z-INDEX: 106; LEFT: 40px; WIDTH: 32px; POSITION: absolute; TOP: 80px; HEIGHT: 24px" type="button" value="7" name="B7" language="javascript" onclick="return B7_onclick()">
+			<INPUT id="B6" style="Z-INDEX: 105; LEFT: 104px; WIDTH: 32px; POSITION: absolute; TOP: 56px; HEIGHT: 24px" type="button" value="6" name="B6" language="javascript" onclick="return B6_onclick()">
+			<INPUT id="B5" style="Z-INDEX: 104; LEFT: 72px; WIDTH: 32px; POSITION: absolute; TOP: 56px; HEIGHT: 24px" type="button" value="5" name="B5" language="javascript" onclick="return B5_onclick()">
+			<INPUT id="B4" style="Z-INDEX: 103; LEFT: 40px; WIDTH: 32px; POSITION: absolute; TOP: 56px; HEIGHT: 24px" type="button" value="4" name="B4" language="javascript" onclick="return B4_onclick()">
+			<INPUT id="B3" style="Z-INDEX: 102; LEFT: 104px; WIDTH: 32px; POSITION: absolute; TOP: 32px; HEIGHT: 24px" type="button" value="3" name="B3" language="javascript" onclick="return B3_onclick()">
+			<INPUT id="B2" style="Z-INDEX: 101; LEFT: 72px; WIDTH: 32px; POSITION: absolute; TOP: 32px; HEIGHT: 24px" type="button" value="2" name="B2" language="javascript" onclick="return B2_onclick()">
+			<INPUT id="B1" style="Z-INDEX: 100; LEFT: 40px; WIDTH: 32px; POSITION: absolute; TOP: 32px; HEIGHT: 24px" type="button" value="1" name="B1" language="javascript" onclick="return B1_onclick()">
+			<INPUT id="TopA" style="Z-INDEX: 115; LEFT: 0px; WIDTH: 32px; POSITION: absolute; TOP: 32px; HEIGHT: 22px" type="text" size="1" name="TopA">
+			<INPUT id="TopB" style="Z-INDEX: 117; LEFT: 0px; WIDTH: 32px; POSITION: absolute; TOP: 56px; HEIGHT: 22px" type="text" size="1" name="TopB">
+			<INPUT id="Tresultado" style="Z-INDEX: 118; LEFT: 0px; WIDTH: 32px; POSITION: absolute; TOP: 104px; HEIGHT: 22px" type="text" size="1" name="Tresultado">
+		</form>
+		<script language="JavaScript" type="text/JavaScript">
+			cuerpo.TopA.readOnly = true;
+			cuerpo.TopB.readOnly = true;
+			cuerpo.Tresultado.readOnly = true;
+		</script>
+	</body>
+</html>
